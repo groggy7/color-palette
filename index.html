@@ -5,8 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Scheme Generator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <h1>Color Scheme Generator</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form class="color-form">
+                <input type="color">
+                <select name="mode" id="mode-selector">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome Dark</option>
+                    <option value="monochrome-light">Monochrome Light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic Complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
+                </select>
+                <button>Get Scheme</button>
+            </form>
+            <div class="palette">
+                <div class="first-color">
+                    <div class="color-section"></div>
+                    <div class="color-section-hex"></div>
+                </div>
+                <div class="second-color">
+                    <div class="color-section"></div>
+                    <div class="color-section-hex"></div>
+                </div>
+                <div class="third-color">
+                    <div class="color-section"></div>
+                    <div class="color-section-hex"></div>
+                </div>
+                <div class="fourth-color">
+                    <div class="color-section"></div>
+                    <div class="color-section-hex"></div>
+                </div>
+                <div class="fifth-color">
+                    <div class="color-section"></div>
+                    <div class="color-section-hex"></div>
+                </div>
+                <div class="sixth-color">
+                    <div class="color-section"></div>
+                    <div class="color-section-hex"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>

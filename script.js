@@ -12,10 +12,7 @@ colorForm.addEventListener("submit", (e) => {
 
     fetch(`${apiURL}scheme?hex=${seedColor}&mode=${mode}&count=6`)
         .then(res => res.json())
-        .then(data => {
-            console.log(data);
-            renderPalette(data);
-        });
+        .then(data => renderPalette(data));
 })
 
 function renderPalette(colorObjects) {
@@ -24,3 +21,7 @@ function renderPalette(colorObjects) {
         document.querySelector(`.color-code-${i+1}`).textContent = colorObjects.colors[i].hex.value;
     }
 }
+
+fetch(`${apiURL}scheme?hex=8673A1&mode=monochrome&count=6`)
+    .then(res => res.json())
+    .then(data => renderPalette(data));

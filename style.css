@@ -54,10 +54,28 @@ input[type="color"] {
     padding: 2px;
 }
 
+.color-form button {
+    cursor: pointer;
+}
+
+.color-form button:hover {
+    color: darkgreen;
+}
+
 .palette {
     width: 600px;
     height: 50vh;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    background-color: #295e7e;
+}
+
+.color-area {
+    display: grid;
+    grid-template-rows: 1fr 16px;
+}
+
+.code-area {
+    text-align: center;
+    font-size: 1.2rem;
+    text-shadow: 0 0 24px black;
 }
